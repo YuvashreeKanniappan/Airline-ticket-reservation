@@ -1,0 +1,81 @@
+<!-- <p>booking-history works!</p>
+<input type="button" onclick="getBookingHistory()" /> -->
+
+<h1>Welcome</h1>
+<div class="add-product-layout">
+    <mat-expansion-panel>
+    <mat-expansion-panel-header>
+    <mat-panel-title>
+    Booking History
+    </mat-panel-title>
+    <mat-panel-description>
+    Enter Email ID
+    <mat-icon>account_circle</mat-icon>
+    </mat-panel-description>
+    </mat-expansion-panel-header>
+    <div class="add-product-form">
+    <mat-form-field appearance="fill">
+    <mat-label>Email ID</mat-label>
+    <input matInput [(ngModel)]="history.mail" >
+    </mat-form-field>
+    <!-- <mat-form-field appearance="fill">
+    <mat-label>Airline Name</mat-label>
+    <input matInput [(ngModel)]="products.airline">
+    </mat-form-field> -->
+    
+    <button mat-raised-button color="primary" (click)="BookingHistory()">History</button>
+    
+    
+    </div>
+    </mat-expansion-panel>
+    </div>
+
+
+
+    <div class="Airline-card-layout">
+        <mat-card class="example-card" *ngFor="let inventories of bookings">
+        <mat-card-header>
+        <div mat-card-avatar class="example-header-image"></div>
+        <mat-card-title> {{inventories.flightID}}</mat-card-title>
+        
+        </mat-card-header>
+        
+        
+
+        <!-- flightID?: number;
+    name?: string;
+    email?: string;
+    numberOfSeats?: number;
+    pnr?: number; -->
+        
+        <mat-card-content>
+        <p> Flight ID : {{inventories.flightID}}</p>
+        <p> Name : {{inventories.name}}</p>
+        <p> PNR : {{inventories.pnr}}</p>
+       
+    
+        <!-- <p>
+        airline: {{inventories.airline}}</p>
+        <p> FromPlace: {{inventories..fromPlace}}
+        </p>
+        <p> startdatetime: {{inventories.startdatetime}}
+        
+        </p>
+        <p> enddatetime: {{inventories.enddatetime}} -->
+        
+        <!---</p>
+        <p> TotalBusinessClass: {{inventories.totalBusinessClass}}
+        
+        </p>
+        <p> TotalNonBusinessClass: {{inventories.totalNonBusinessClass}}
+        
+        </p>
+        <p> TicketCost: {{inventories.ticketCost}}
+        
+        </p>
+        <p> MealType: {{inventories.mealType}} -->
+        
+        <!-- </p> -->
+         <!-- <button mat-raised-button color="primary" (click)="bookflights(inventories.flightId)">Book flight</button>  -->
+        
+        </mat-card-content>
