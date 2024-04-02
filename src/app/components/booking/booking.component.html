@@ -1,0 +1,51 @@
+<!-- <p>booking works!</p> -->
+
+<div class="add-product-layout">
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          Add Booking
+        </mat-panel-title>
+        <mat-panel-description>
+          Enter the details
+          <mat-icon>account_circle</mat-icon>
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+  
+      <div class="add-product-form">
+  
+        <mat-form-field appearance="fill">
+          <mat-label>Flight ID</mat-label>
+          <input matInput [(ngModel)]="booking.flightID">
+        </mat-form-field>
+  
+        <mat-form-field appearance="fill">
+          <mat-label>Name</mat-label>
+          <input matInput [(ngModel)]="booking.name">
+        </mat-form-field>
+  
+        <mat-form-field appearance="fill">
+          <mat-label>Email</mat-label>
+          <input matInput [(ngModel)]="booking.email">
+        </mat-form-field>
+  
+        <mat-form-field appearance="fill">
+          <mat-label>Number of seats</mat-label>
+          <input matInput [(ngModel)]="booking.numberOfSeats">
+        </mat-form-field>
+
+        <button mat-raised-button color="primary" (click)="bookingLogin()">Add Booking</button>
+    </div>
+    </mat-expansion-panel>
+  </div>
+  
+  
+  <!-- bookingLogin(regiterForm: NgForm) 
+        <button mat-raised-button color="primary" (click)="bookingLogin()">Add Booking</button>
+      </div>
+    </mat-expansion-panel>
+  </div> -->
+  
+
+
+  
