@@ -1,0 +1,29 @@
+<div class="prodct-card-layout">
+    <mat-card class="example-card" *ngFor="let product of products">
+        <mat-card-header>
+            <div mat-card-avatar class="example-header-image"></div>
+            <mat-card-title > {{product.airLine_Name}}</mat-card-title>
+            <!-- <mat-card-subtitle> {{product.airlineID}}</mat-card-subtitle> -->
+        </mat-card-header>
+        <mat-card-content>
+            <p>
+      <label>From Place:</label>{{product.from_Place}} <br/>
+      <label>Destination:</label>{{product.destination}}<br/>
+      <label>Journey Date:</label>{{product.start_date}}<br/>
+      <label>Departure Time:</label>{{product.startTime}}<br/>
+                <!-- {{product.start_date}}
+                {{product.end_Date}}
+                {{product.startTime}}
+                {{product.instrument}}
+                {{product.buisness_Class_Seats}}
+                {{product.non_Business_class_Capacity}}
+                {{product.totalCost}}
+                {{product.rows_count}}
+                {{product.meal_preference}} -->
+            </p>
+        </mat-card-content>
+        <!-- <mat-card-actions>
+            <button mat-button> {{product.isAvailble}}</button>
+        </mat-card-actions> -->
+    </mat-card>
+</div>

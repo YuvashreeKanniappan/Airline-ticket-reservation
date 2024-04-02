@@ -1,0 +1,26 @@
+.prodct-card-layout{
+    display: flex;
+    flex-wrap: wrap;  
+    margin-left: 150px; 
+    font-family: "Playfair Display";
+    font-size: 16px;
+   background-image: url("https://thumbs.dreamstime.com/b/vector-airplane-icon-cartoon-plane-blue-sky-flying-52082875.jpg");
+
+}
+.example-card {
+    max-width: 200px;
+    background-color: rgb(42, 158, 42);
+    border:3px solid   rgb(39, 121, 39);
+    margin:10px;
+    color: white;
+    font-family: "Playfair Display";
+    font-style: italic;
+    font-size: 16px;
+    
+  }
+
+  .mat-card-content{
+    font-size: 16px;
+  }
+
+  
