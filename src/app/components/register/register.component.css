@@ -1,0 +1,45 @@
+
+.submit-cutom-button{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    /* background-color: white; */
+    text-align: left;
+    font-family: "Playfair Display";
+    font-style: italic;
+    /* background-image: url('https://th.bing.com/th/id/R.214af56e53686bab822fda55042582bd?rik=OI0HNxJQg%2fI0aQ&riu=http%3a%2f%2f2.bp.blogspot.com%2f-qEwUGR6srqM%2fUdQQIGeLzXI%2fAAAAAAAAFr4%2fEeAsR9mOewY%2fs1600%2fAirplane-Wallpapers-HD-50.jpg&ehk=1YwNTAGLFBczUXz4NT4S454oZb22fDnoy%2bbK%2biKOHCU%3d&risl=&pid=ImgRaw&r=0');
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%; */
+
+     background-image: url("https://thumbs.dreamstime.com/b/jet-plane-flying-up-nord-america-map-12246734.jpg"); 
+     background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%; 
+      
+}
+#inputPassword
+{
+    width:178px;
+    /* height: 10px; */
+}
+.Register
+{
+    background-color:rgb(92, 241, 92);
+    width:160px;
+}
+.col-form-label
+{
+    font-family: "Playfair Display";
+    font-style: italic;
+    /* //font-weight: 800; */
+    font-size: large;
+    font-weight: bolder;
+    
+}
+
+
