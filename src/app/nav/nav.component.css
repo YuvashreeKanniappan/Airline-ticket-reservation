@@ -1,0 +1,32 @@
+.sidenav-container {
+  height: 9vh;
+  }
+  
+  
+  
+  .sidenav {
+  width: 150px;
+  background-color: white;
+  font-family: "Playfair Display";
+  font-style: italic;
+  }
+  
+  
+  .sidenav .mat-toolbar {
+  background: inherit;
+  background-color: ghostwhite;
+  font-family: "Playfair Display";
+  font-style: italic;
+  font-weight: bold;
+  }
+  
+  
+  .mat-toolbar.mat-primary {
+  position: sticky;
+  top: 0;
+  font-family: "Playfair Display";
+  font-style: italic;
+  font-weight: bold;
+  background-color:rgba(60, 177, 60, 0.815);
+  z-index: 1;
+  }

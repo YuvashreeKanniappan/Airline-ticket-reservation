@@ -1,0 +1,32 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav #drawer class="sidenav" fixedInViewport [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+    [mode]="(isHandset$ | async) ? 'over' : 'side'" [opened]="(isHandset$ | async) === false">
+    <mat-toolbar>Menu</mat-toolbar>
+    <mat-nav-list>
+      <a mat-list-item routerLink="register">Register</a>
+      <a mat-list-item routerLink="login">Login</a>
+      <!-- <a mat-list-item routerLink="display-product">Product Display</a>
+      <a mat-list-item routerLink="add-product">Add Product</a> -->
+      <!-- <a mat-list-item routerLink="searchinventory">Search Flights</a> -->
+      <a mat-list-item routerLink="flight">Search</a>
+     <a mat-list-item routerLink="display-ticket">Get Tickets</a>
+      <!-- <a mat-list-item routerLink="add-inventory">Add Inventory</a> -->
+      <a mat-list-item routerLink="newproduct">Inventory</a>
+      <a mat-list-item routerLink="booking-history">Booking History</a>
+      <a mat-list-item routerLink="logout">Logout</a>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-toolbar color="primary">
+      <button type="button" aria-label="Toggle sidenav" mat-icon-button (click)="drawer.toggle()"
+        *ngIf="isHandset$ | async">
+        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+      </button>
+      <span>Let's travel to the dream destination!</span>
+    </mat-toolbar>
+    <!-- Add Content Here -->
+  </mat-sidenav-content>
+</mat-sidenav-container>
+    <!-- Add Content Here -->
+
+
