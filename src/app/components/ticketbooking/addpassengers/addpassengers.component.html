@@ -1,0 +1,112 @@
+<!-- <p style="text-align:center">addpassengers works!</p> -->
+
+<div class="add-product-layout">
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          Add Inventory
+        </mat-panel-title>
+        <mat-panel-description>
+          Enter Flight Name and .............
+          <mat-icon>account_circle</mat-icon>
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+  
+      <div class="add-product-form">
+  
+        <!-- <mat-form-field appearance="fill">
+          <mat-label>Booking ID</mat-label>
+          <input matInput [(ngModel)]="passenger.bookingID">
+        </mat-form-field> -->
+        <mat-form-field appearance="fill">
+            <mat-label>Name</mat-label>
+            <input matInput [(ngModel)]="passenger.passenger_Name">
+          </mat-form-field>
+  
+        <mat-form-field appearance="fill">
+          <mat-label>Gender </mat-label>
+          <input matInput [(ngModel)]="passenger.gender">
+        </mat-form-field>
+  
+        <mat-form-field appearance="fill">
+          <mat-label>Age</mat-label>
+          <input matInput [(ngModel)]="passenger.age">
+        </mat-form-field>
+  
+        <mat-form-field appearance="fill">
+          <mat-label>Meal</mat-label>
+          <input matInput [(ngModel)]="passenger.meal_preference">
+        </mat-form-field>
+  
+        <mat-form-field appearance="fill">
+          <mat-label>SeatNumber</mat-label>
+          <input matInput [(ngModel)]="passenger.seatNumbers">
+        </mat-form-field>
+  
+        <mat-form-field appearance="fill">
+          <mat-label>Travel Date</mat-label>
+          <input matInput [(ngModel)]="passenger.travelDate" hidden>
+        <br/>
+        <input type="date" [(ngModel)]="passenger.travelDate"/>
+        </mat-form-field>
+  
+        <button mat-raised-button color="primary" (click)="addPassenger()">Add Passenger</button>
+    </div>
+    </mat-expansion-panel>
+  </div>
+
+
+
+
+  <div class="add-product-layout">
+    <mat-card class="example-card" *ngFor="let inventories of passengerss">
+    <mat-card-header>
+    <div mat-card-avatar class="example-header-image"></div>
+    <mat-card-title> {{inventories.passenger_Name}}</mat-card-title>
+    
+    </mat-card-header>
+    
+    
+    
+    <mat-card-content>
+    <p> Gender: {{inventories.gender}}</p>
+    <p> Age: {{inventories.age}}</p>
+    <p> Meal Preference: {{inventories.meal_preference}}</p>
+    <p> SeatNumber : {{inventories.seatNumbers}} </p>
+    <p> PNR : {{inventories.pnr}} </p>
+
+    <!-- <p>
+    airline: {{inventories.airline}}</p>
+    <p> FromPlace: {{inventories..fromPlace}}
+    </p>
+    <p> startdatetime: {{inventories.startdatetime}}
+    
+    </p>
+    <p> enddatetime: {{inventories.enddatetime}} -->
+    
+    <!---</p>
+    <p> TotalBusinessClass: {{inventories.totalBusinessClass}}
+    
+    </p>
+    <p> TotalNonBusinessClass: {{inventories.totalNonBusinessClass}}
+    
+    </p>
+    <p> TicketCost: {{inventories.ticketCost}}
+    
+    </p>
+    <p> MealType: {{inventories.mealType}} -->
+    
+    <!-- </p> -->
+     <button mat-raised-button color="primary" (click)="showticket(inventories.flightID)">Display Ticket</button> 
+    
+    </mat-card-content>
+
+  <!-- bookingID? : number;
+  passengerID?: number;
+  passenger_Name;
+  gender?: string;
+  age?: string;
+  meal_preference?: string;
+  seatNumbers?: number;
+  travelDate?: Date;
+  pnr?: number; -->

@@ -1,0 +1,31 @@
+p{
+    text-align: center;
+}
+.add-product-layout{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    background-image: url("https://th.bing.com/th/id/OIP.OIS8yIBb1vFtva0Ly9k4rwHaFx?pid=ImgDet&w=1000&h=780&rs=1");
+  /* Full height */
+  /* height: 100%; */
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Playfair Display";
+    font-style: italic;
+    font-weight: bolder;
+}
+.add-product-form{
+    display: flex;
+    flex-direction: column;
+    font-family: "Playfair Display";
+    font-style: italic;
+    font-weight: bolder;
+}
+
+.mat-raised-button.mat-primary{
+    background-color: rgb(42, 158, 42);
+}
