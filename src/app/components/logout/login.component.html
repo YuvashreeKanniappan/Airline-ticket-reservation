@@ -1,0 +1,17 @@
+<div class="login-layout">
+    <form class="login-form-layout" [formGroup]="loginForm" (ngSubmit)="userLogin(loginForm)">
+        <p style="color:rgb(42, 158, 42);font-size:30px;font-weight: bolder;">Welcome User</p>
+        <mat-form-field appearance="legacy">
+            <mat-label style="color: black;font-size:20px;">User Name </mat-label>
+            <input matInput placeholder="Placeholder" formControlName="name" type="text" >
+            <mat-error *ngIf="loginForm.get('name')?.touched">User Name required</mat-error>
+        </mat-form-field>
+
+        <mat-form-field appearance="legacy">
+            <mat-label style="color: black;font-size:20px;">Password</mat-label>
+            <input matInput placeholder="Placeholder" formControlName="password" type="password">
+        </mat-form-field>
+
+        <button mat-raised-button color="primary" [disabled]="loginForm.invalid">Login</button>
+    </form>
+</div>
