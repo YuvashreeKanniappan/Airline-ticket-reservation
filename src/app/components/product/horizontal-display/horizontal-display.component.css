@@ -1,0 +1,16 @@
+.prodct-card-layout{
+    display: flex;
+    flex-wrap: wrap;  
+    margin-left: 150px; 
+}
+.example-card {
+    max-width: 400px;
+    background-color: rgb(39, 121, 39);
+    border:3px solid rgb(64, 231, 64);
+    margin:10px;
+  }
+
+h1{
+    text-align: center;
+    color: black;
+}
