@@ -1,0 +1,20 @@
+p{
+    text-align: center;
+}
+.add-product-layout{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBm4I6PU2B6r1kiRymr9rWey5j-IcQMZqdpg&usqp=CAU");
+  /* Full height */
+  /* height: 100%; */
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.add-product-form{
+    display: flex;
+    flex-direction: column;
+}

@@ -1,0 +1,88 @@
+<div class="add-product-layout">
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        Add Inventory
+      </mat-panel-title>
+      <mat-panel-description>
+        Enter Flight Name and .............
+        <mat-icon>account_circle</mat-icon>
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+
+    <div class="add-product-form">
+
+      <mat-form-field appearance="fill">
+        <mat-label>Airline ID</mat-label>
+        <input matInput [(ngModel)]="product.airlineID">
+      </mat-form-field>
+
+      <mat-form-field appearance="fill">
+        <mat-label>Flight Number</mat-label>
+        <input matInput [(ngModel)]="product.flightNumber">
+      </mat-form-field>
+
+      <mat-form-field appearance="fill">
+        <mat-label>Airline Name</mat-label>
+        <input matInput [(ngModel)]="product.airLine_Name">
+      </mat-form-field>
+
+      <mat-form-field appearance="fill">
+        <mat-label>From Where</mat-label>
+        <input matInput [(ngModel)]="product.from_Place">
+      </mat-form-field>
+
+      <mat-form-field appearance="fill">
+        <mat-label>Destination</mat-label>
+        <input matInput [(ngModel)]="product.destination">
+      </mat-form-field>
+
+      <mat-form-field appearance="fill">
+        <mat-label>Start Date</mat-label>
+        <input matInput [(ngModel)]="product.start_date">
+      </mat-form-field>
+
+      <mat-form-field appearance="fill">
+        <mat-label>End Date</mat-label>
+        <input matInput [(ngModel)]="product.end_Date">
+      </mat-form-field>
+
+      <mat-form-field appearance="fill">
+        <mat-label>Start Time</mat-label>
+        <input matInput [(ngModel)]="product.startTime">
+      </mat-form-field>
+
+      <mat-form-field appearance="fill">
+        <mat-label>Instrument</mat-label>
+        <input matInput [(ngModel)]="product.instrument">
+      </mat-form-field>
+
+      <mat-form-field appearance="fill">
+        <mat-label>Business Seats</mat-label>
+        <input matInput [(ngModel)]="product.buisness_Class_Seats">
+      </mat-form-field>
+
+      <mat-form-field appearance="fill">
+        <mat-label>Regular Class</mat-label>
+        <input matInput [(ngModel)]="product.non_Business_class_Capacity">
+      </mat-form-field>
+
+      <mat-form-field appearance="fill">
+        <mat-label>Price</mat-label>
+        <input matInput [(ngModel)]="product.totalCost">
+      </mat-form-field>
+
+      <mat-form-field appearance="fill">
+        <mat-label>Rows</mat-label>
+        <input matInput [(ngModel)]="product.rows_count">
+      </mat-form-field>
+
+      <mat-form-field appearance="fill">
+        <mat-label>Meal</mat-label>
+        <input matInput [(ngModel)]="product.meal_preference">
+      </mat-form-field>
+
+      <button mat-raised-button color="primary" (click)="addProduct()">Add Product</button>
+    </div>
+  </mat-expansion-panel>
+</div>
