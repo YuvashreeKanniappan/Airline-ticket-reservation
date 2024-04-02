@@ -1,0 +1,149 @@
+<!-- <h3>Book Details with Observable</h3>
+<ul>
+  <li *ngFor="let book of getTickets" >
+    Id: {{getTickets.pnr}}, Name: {{book.name}}
+  </li>
+</ul> -->
+
+<h1>Welcome</h1>
+<div class="add-product-layout">
+    <mat-expansion-panel>
+    <mat-expansion-panel-header>
+    <mat-panel-title>
+    Flight Details
+    </mat-panel-title>
+    <mat-panel-description>
+    Enter PNR Number.....
+    <mat-icon>account_circle</mat-icon>
+    </mat-panel-description>
+    </mat-expansion-panel-header>
+    <div class="add-product-form">
+    <mat-form-field appearance="fill">
+    <mat-label>PNR</mat-label>
+    <input matInput [(ngModel)]="display.PNR" >
+    </mat-form-field>
+    <!-- <mat-form-field appearance="fill">
+    <mat-label>Airline Name</mat-label>
+    <input matInput [(ngModel)]="products.airline">
+    </mat-form-field> -->
+    
+    <button mat-raised-button color="primary" (click)="getbookedticket()">Get my ticket</button>
+    
+    
+    </div>
+
+
+
+    
+    </mat-expansion-panel>
+    </div>
+
+
+    <div class="Airline-card-layout">
+      <mat-card class="example-card" *ngFor="let inventories of passengerss">
+      <mat-card-header>
+      <div mat-card-avatar class="example-header-image"></div>
+      <mat-card-title> Flight Ticket </mat-card-title>
+      
+      </mat-card-header>
+      
+      
+      
+      <mat-card-content>
+      <p>Passenger Name :  {{inventories.passenger_Name}}</p>
+      <p>Gender: {{inventories.gender}}</p>
+      <p> Age: {{inventories.age}}</p>
+      <p> Meal Preference: {{inventories.meal_preference}}</p>
+      <p> Seat Number: {{inventories.seatNumbers}} </p>
+      <p> PNR : {{inventories.pnr}}</p>
+  
+      <!-- <p>
+      airline: {{inventories.airline}}</p>
+      <p> FromPlace: {{inventories..fromPlace}}
+      </p>
+      <p> startdatetime: {{inventories.startdatetime}}
+      
+      </p>
+      <p> enddatetime: {{inventories.enddatetime}} -->
+      
+      <!---</p>
+      <p> TotalBusinessClass: {{inventories.totalBusinessClass}}
+      
+      </p>
+      <p> TotalNonBusinessClass: {{inventories.totalNonBusinessClass}}
+      
+      </p>
+      <p> TicketCost: {{inventories.ticketCost}}
+      
+      </p>
+      <p> MealType: {{inventories.mealType}} -->
+      
+      <!-- </p> -->
+       <!-- <button mat-raised-button color="primary" (click)="bookflights(inventories.flightId)">Book flight</button>  -->
+      
+      </mat-card-content>
+      <div class="prodct-card-layout">
+
+
+
+        <mat-card class="example-card" *ngFor="let product of products">
+        <mat-card-header>
+        <div mat-card-avatar class="example-header-image">
+        <mat-icon>flight_takeof</mat-icon>
+        </div>
+        <mat-card-title> {{product?.flightNumber}}</mat-card-title>
+        <mat-card-subtitle> {{product?.airLine_Name}}</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content>
+        &nbsp;&nbsp;&nbsp; Your Booking Details
+        <table id="flight">
+        <th id="flightth">Arrival</th>
+        <th id="flightth">Destination</th>
+        <th id="flightth">StartTime</th>
+        <th id="flightth">EndTime</th>
+        <th id="flightth">TicketCost</th>
+        <tr>
+        <td id="flighttd">{{product?.from_Place}}</td>
+        <td id="flighttd">{{product?.destination}}</td>
+        <td id="flighttd">{{product?.start_date}}</td>
+        <td id="flighttd">{{product?.end_Date}}</td>
+        <td id="flighttd">{{product?.totalCost}}</td>
+        </tr>
+        </table>
+        <!-- <p>FromPlace:{{product?.fromPlace}}</p>
+        <p>ToPlace:{{product?.toPlace}}</p>
+        <p>StartTime:{{product?.startTime}}</p>
+        <p>EndTime:{{product?.endTime}}</p>
+        <p>TicketCost:{{product?.ticketCost}}</p> -->
+        </mat-card-content>
+        <mat-card-actions>
+        </mat-card-actions>
+        </mat-card>
+        <button mat-raised-button color="primary" (click)="CancelTicket(passengerss)">Cancel Ticket</button>
+
+<!-- passengerID?: number;
+  passenger_Name;
+  gender?: string;
+  age?: string;
+  meal_preference?: string;
+  seatNumbers?: number;
+  travelDate?: Date;
+  pnr?: number;
+  airlineID?: number;
+    flightId?: number;
+    flightNumber?: string;
+    airLine_Name? : string;
+    from_Place?: string;
+    destination?: string;
+    start_date?: Date;
+    end_Date?: Date;
+    startTime?: Date;
+    instrument?: string;
+    buisness_Class_Seats?:  number;
+    non_Business_class_Capacity?: number;
+    totalCost?: number;
+    rows_count?: number;
+    meal_preference?: string;
+
+
+--> 

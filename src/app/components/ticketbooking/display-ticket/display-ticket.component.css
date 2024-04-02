@@ -1,0 +1,58 @@
+p{
+  text-align: center;
+  }
+  .add-product-layout{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  background-image: url("https://cdn.trendhunterstatic.com/phpthumbnails/369/369154/369154_1_800.jpeg");
+  font-family: "Playfair Display";
+    font-style: italic;
+    font-weight: bolder;
+  
+  
+  }
+  .add-product-form{
+  display: flex;
+  flex-direction: column;
+  font-family: "Playfair Display";
+    font-style: italic;
+    font-weight: bolder;
+  }
+  
+  
+  
+  
+  
+  .Airline-card-layout{
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 150px;
+  
+  }
+  .example-card {
+  max-width: 500px;
+  background-color: white;
+  border:3px solid rgb(13, 161, 13) ;
+  color: black;
+  font-family: "Playfair Display";
+  font-style: italic;
+  margin:10px;
+  }
+  
+  
+  
+  h1{
+  text-align: center;
+  color: white;
+  }
+  .Book
+  {
+  background-color:rgb(42, 158, 42);
+  }
+
+
+  .mat-raised-button.mat-primary{
+    background-color: rgb(42, 158, 42);
+}
